@@ -34,13 +34,3 @@ class Test {
     c.type((C) c);
     }
 }
-
-
-/*
-Idea central:
-En Java hay dos "tipos" distintos que conviven al mismo tiempo:
-- El tipo estático (o de compilación) → lo que el compilador cree que es el objeto (por ejemplo, A, B o C según la variable o el cast).
-- El tipo dinámico (o real) → el tipo real del objeto en memoria (por ejemplo, si fue creado con new C()).
--> El tipo estático decide qué método se puede llamar (qué firma es válida).
--> El tipo dinámico decide qué implementación se ejecuta.
- */

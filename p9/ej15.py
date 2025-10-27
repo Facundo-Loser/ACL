@@ -1,23 +1,19 @@
-from enum import Enum
+class Vehiculo():
+    def __init__(self, marca, modelo):
+        self.marca = marca
+        self.modelo = modelo
 
-class TipoVehiculo(Enum):
-    COMBUSTION = 0
-    ELECTRICO = 1
-    HIBRIDO = 2
-
-class VehiculoCombustion():
+class VehiculoCombustion(Vehiculo):
     def __init__(self, capMaxL, marca, modelo):
-         self.capMaxL = capMaxL  # cap max combustible
-         self.capActualL = 0    # cant de litros de comb o kwh que tiene
-         self.tipoV = TipoVehiculo.COMBUSTION    # tipo de vehículo (enum)
-         self.marca = marca
-         self.modelo = modelo
+        Vehiculo.__init__(self, marca, modelo)
+        self.capMaxL = capMaxL # cap maxima de combustible
+        self.capActualL = 0    # cap actual de combustible
 
     def cargarCombustible(self, litros):
-        if self.capActual + litros > self.capMaxL:
-            self.capActual = self.capMaxL
+        if self.capActualL + litros > self.capMaxL:
+            self.capActualL = self.capMaxL
         else:
-            self.capActual += litros
+            self.capActualL += litros
 
     def descripcion(self):
         print(f"tipo vehículo: combustible")
@@ -25,19 +21,17 @@ class VehiculoCombustion():
         print(f"marca: {self.marca}")
         print(f"modelo: {self.modelo}")
 
-class VehiculoElectrico():
+class VehiculoElectrico(Vehiculo):
     def __init__(self, capMaxKwh, marca, modelo):
-         self.capMaxKwh = capMaxKwh  # cap max kwh kilovatios hora
-         self.capActualKwh = 0    # cant de litros de comb o kwh que tiene
-         self.tipoV = TipoVehiculo.ELECTRICO    # tipo de vehículo (enum)
-         self.marca = marca
-         self.modelo = modelo
+            Vehiculo.__init__(self, marca, modelo)
+            self.capMaxKwh = capMaxKwh # cap maxima de kilovatios
+            self.capActualKwh = 0      # cap actual de kwh
 
     def cargarBateria(self, kwh):
-        if self.capActual + kwh > self.capMaxKwh:
-            self.capActual = self.capMaxKwh
+        if self.capActualKwh + kwh > self.capMaxKwh:
+            self.capActualKwh = self.capMaxKwh
         else:
-            self.capActual += kwh
+            self.capActualKwh += kwh
 
     def descripcion(self):
         print(f"tipo vehículo: electrico")
@@ -46,10 +40,37 @@ class VehiculoElectrico():
         print(f"modelo: {self.modelo}")
 
 class VehiculoHibrido(VehiculoCombustion,VehiculoElectrico):
-    pass
+    def __init__(self, capMaxL, capMaxKwh, marca, modelo):
+        VehiculoCombustion.__init__(self, capMaxL, marca, modelo)
+        VehiculoElectrico.__init__(self, capMaxKwh, marca, modelo)
+
+    def descripcion(self):
+        print("tipo vehiculo: hibrido")
+        print(f"capacidad máxima: {self.capMaxL} L")
+        print(f"capacidad máxima: {self.capMaxKwh} KWH")
+        print(f"capacidad actual L: {self.capActualL}")
+        print(f"capacidad actual Khw: {self.capActualKwh}")
+        print(f"marca: {self.marca}")
+        print(f"modelo: {self.modelo}")
 
 # ejemplo de uso:
+h = VehiculoHibrido(50, 100, "Toyota", "Prius")
+h.descripcion()
+h.cargarCombustible(44)
+h.cargarBateria(90)
+print("****")
+h.descripcion()
 
+print("chequear el MRO:")
+print(VehiculoHibrido.__mro__)
+
+"""
+MRO:
+(<class '__main__.VehiculoHibrido'>,
+<class '__main__.VehiculoCombustion'>,
+<class '__main__.VehiculoElectrico'>,
+<class '__main__.Vehiculo'>, <class 'object'>)
+"""
 
 
 """
@@ -64,3 +85,5 @@ Esquema de herencias:
                           |            |
                      [clase VehiculoHibrido]
 """
+
+# MRO: [VehiculoHibrido, VehiculoCombustion, VehiculoElectrico, object]
