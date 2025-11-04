@@ -1,0 +1,13 @@
+1> c(geometry).
+{ok,geometry}
+2> c(areaserver).
+{ok,areaserver}
+3> Pid = areaserver:start().
+<0.97.0>
+4> Pid ! {self(), {square, 3.4}}.
+{<0.85.0>,{square,3.4}}
+5> receive
+   {area, Ans} -> io:format("Área: ~p~n", [Ans])
+   end.
+Área: 11.559999999999999
+ok
