@@ -1,0 +1,64 @@
+Capítulo 1:  (libro)
+- Que es un paradigma?
+- Que paradigmas existen?
+- Que es un lenguaje de programación?
+- Que permite hacer al programador un lenguaje de programación?
+- Que es la programación?
+- Que es una abstracción procedural?
+- Que es una abstracción de datos/TAD?
+- Evaluación de un lenguaje de programación /
+  Que propiedades debería tener un lenguaje de programación? (8 props)
+- Que se necesita para definir un lenguaje de programación?
+- Como se define la sintaxis de un lenguaje?
+- Que es una gramatica libre de contexto?
+- Que es una regla de derivación?
+- Que es un árbol de derivación / parse tree?
+- Como se desambigua una gramatica? (ejemplo del arbol a+b*c)
+- Cuando dos gramáticas son equivalentes?
+- Que es una gramatica regular? que permiten hacer?
+- gramaticas regulares extendidas
+- Que es una expresión regular?
+- Que es una EBNFs?
+- Como se define la semantica de un lenguaje?
+- Que herramientas existen para la construcción de programas?
+- Que es un compilador?
+- Que es un interprete?
+- Que es un enlazador/linker?
+- Como funciona un compilador?
+- Que es una biblioteca?
+- Que es enlazado estático / static linking?
+- Ventajas y desventajas de static linking
+- Que es enlazado dinámico / dynamic linking? (DLLs)
+- Ventajas y desventajas de dynamic linking
+- Porque una biblioteca compartida no debería tener un estado propio? /
+  (se podra resolver usando concurrencia sincronizada o algo asi?)
+
+Capítulo 1: Introducción (slides)
+- Cual es el objetivo principal de la programación?
+- Que son las gramaticas regulares? que forma tienen
+- Que son las gramaticas libre de contexto y BNFs? que forma tienen?
+- Que es un automata? que tipos hay? para que sirve cada tipo?
+- Que es un arbol de derivación?
+- Que hace un parser?
+- Que contienen los archivos binarios/objetos? (las secciones)
+- Que es un archivo ejecutable?
+- Que es una máquina virtual?
+- Cual es la diferencia entre una máquina virtual y un interprete?
+
+Capítulo 1: Introducción (preguntas anotadas)
+- Cuando una gramatica es ambigua?
+- Porque es tan dificil hacer un compilador de un lenguaje declarativo?
+- Para expresiones regulares tener el ejemplo de un identificar en C
+
+Capítulo 1: Introducción (drive)
+- Que es una abstracción de datos?
+- Que es una abstracción procedural?
+- Librerias estáticas vs dinámicas
+- Cuales son las características deseables de un lenguaje de programación
+
+
+
+
+Capitulo 2: Lenguajes y modelos de programación (libro)
+- Que puntos definen un lenguaje de programación?
+-
