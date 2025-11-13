@@ -60,5 +60,96 @@ Capítulo 1: Introducción (drive)
 
 
 Capitulo 2: Lenguajes y modelos de programación (libro)
-- Que puntos definen un lenguaje de programación?
--
+- Que puntos definen un paradigma?
+- Que define un paradigma?
+- En que grupos se pueden dividir los modelos de programación?
+- Explicar modelo declarativo y modelo con estado
+- Ventajas y desventajas del modelo declarativo
+- Ventajas y desventajas del modelo con estado
+- Que es la transparencia referencial?
+- En que categorias se pueden clasificar los lenguajes declarativos?
+- Como se pueden clasificar los lenguajes con estado?
+- Decir los elementos de un lenguaje de programación
+- Diferencia entre declaración y definición de entidades
+- Que es un tipo de dato?
+- Cuales son los tipos de datos básicos? (elementales y estructurados)
+- Porque esta bueno definir tipos a partir de otros ya definidos? /
+  (se podría dar el ejemplo de los números complejos)
+- Que es es un tipo estructurado de datos? /
+  Como se pueden clasificar?
+- Una ventaja de estrucutras estáticas
+  y una desventaja de estructuras dinámicas
+- Que quiere decir que una estructura sea estatica o dinamica?
+- Que es el type checking? /
+  cuando se hace en un lenguaje de tipado estatico y en uno dinámico?
+- Ventajas y desventajas de un lenguaje de tipado estático
+- Ventajas y desventajas de un lenguaje de tipado dinámico
+- En un lenguaje de tipado estatico el chequeo de tipos es conservador /
+  Que es eso?
+- Que es un sist de tipos fuerte?
+- Que es un sist de tipos débil?
+- Que es un sist de tipos monomorfico?
+- Que es un sist de tipos polimorfico?
+- Que es el polimorfismo paramétrico de haskell?
+- En orientado a objetos como es el polimorfismo?
+- Que es un tipo dependiente?
+- Que es un lenguaje con sist de tipo seguro? inseguro?
+- Que es es un binding/ligadura?
+- Que tipos de ligadura hay? (valor / tipo)
+- En que momentos se puede hacer una ligadura?
+- Que es el alcance de una variable?
+- Que es un ambiente?
+- Ambiente en lenguaje con alcance estático
+- Ambiente en lenguaje con alcance dinámico
+- Ventaja de alcance estático
+- Ventaja y desventaja de alcance dinámico
+- Que es una excepción?
+- Que es una excepción/ manejador de excepciones?
+- Relación pila de registros de activación y manejador de excepción
+- Como debería ser el mecanismo del manejador de excepciones?
+
+Capitulo 2: Lenguajes y modelos de programación (slides)
+- Explicar la equivalencia de tipos (estructural y por nombre)
+- Dar ejemplos de transparecnia referencial
+
+Capitulo 2: Lenguajes y modelos de programación (preguntas anotadas)
+- Como es la unica forma en funcional para llevar/guardar un estado a largo plazo?
+- Que lenguajes tienen equivalencia por nombre y cuales por estructura?
+- Porque los lenguajes con alcance dinámico suelen tener tipado dinámico y
+  los lenguajes con alcance estático tienen tipado estático?
+- Es posible crear un programa Pascal en el que salte un error
+  de tipos en ejecución?
+- Que sist de equivalencia de tipos usa C?
+- Que lenguajes usan equivalencia por nombre y cuales por estructura?
+- Hacer un análisis comparativo entre sistemas de tipos estáticos vs. dinámicos
+
+
+Capitulo 2: Lenguajes y modelos de programación (drive)
+- De una clasificación de los tipos de datos estructurados
+- Tipados, nombrarlos y describirlos
+- ¿Que formalismos conoces para definir un lenguaje de programación?
+- Para qué tipo de problemas usarias cada paradigma
+- Cuadro comparativo entre funcional e imperativo
+- Explicar transparencia referencial
+- ¿Que es polimorfismo , monomorfismo y polimorfismo parametrico?
+- Define alcance Estático y Dinámico
+- Explicar algunos ejemplos de cuándo es mejor/peor utilizar cierto modelo frente otro
+- Como haces en un lenguaje imperativo para pasar funciones como parámetro? /
+  Y en orientado a objetos??
+- Dar un programa Pascal que muestre que no tiene un sistema de tipo seguro
+
+
+
+
+Cosas Random:
+- Ejemplos de lenguajes para cada cosa
+- Acordarse que la concurrencia tambien es un paradigma (transversal a todos)
+- python tiene sist de tipos seguro
+- Practicar todas las preuntas teoricas de los ejercicios del libro?
+- Lenguajes: C/C++, Java, Haskell, Lisp, Perl, Prolog, Java, Fortran, Pascal, Erlang, Oz
+
+Lenguajes fuertemente tipados y compilados (C, C++, Java, Rust, Ada, C#)
+suelen usar equivalencia por nombre para garantizar seguridad de tipos y evitar confusiones.
+
+Lenguajes más dinámicos o con tipado estructural (TypeScript, Go, Python)
+tienden a usar equivalencia estructural, priorizando flexibilidad sobre rigidez.
