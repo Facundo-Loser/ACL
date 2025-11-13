@@ -123,7 +123,6 @@ Capitulo 2: Lenguajes y modelos de programación (preguntas anotadas)
 - Que lenguajes usan equivalencia por nombre y cuales por estructura?
 - Hacer un análisis comparativo entre sistemas de tipos estáticos vs. dinámicos
 
-
 Capitulo 2: Lenguajes y modelos de programación (drive)
 - De una clasificación de los tipos de datos estructurados
 - Tipados, nombrarlos y describirlos
@@ -141,6 +140,115 @@ Capitulo 2: Lenguajes y modelos de programación (drive)
 
 
 
+Capitulo 3: el modelo declarativo (libro)
+- Lo bueno y lo malo de la programación declarativa
+- Que paradigmas comprende el declarativo?
+- Cuando una operación computacional es declarativa?
+- Explicar las 3 características de una operación declarativa
+  (independiente, sin estado y deterministica)
+- explicar características de declarativo
+  (composicionales, fáciles de analizar/razonar modularmente, recursión)
+- Desventajas de declarativo
+- Memoria de asignación única
+- Que es un valor parcial? (con un ejemplo)
+- En lenguajes funcionales como Haskell las variables estan
+  ligadas desde su introducción?
+- Dónde se encuentran los identificadores y dónde estan las variables?
+- Que es un ambiente?
+- En que area de memoria estan contenidos los identificadores?
+- En lenguajes compilados existen los identificadores?
+- Dar un ejemplo de un valor construido parcialmente en Oz
+- Dar un ejemplo de una estructura cíclica en Oz
+- Que es aliasing? genera problema en declarativo? y en imperativo?
+- Los procedimeintos son mas generales que las funciones?
+- Que es una sintactic sugar?
+- Que es una expresión?
+- Que permite un modelo de computación?
+- La máquina abstracta que es?
+- En declarativo un programa Oz es solo una sentencia?
+- Que es la memoria de asignación única?
+- Que es una sentencia semántica?
+- Que es un estado de ejecución en la máquia abstracta?
+- Que es una computación en la máquina abstracta?
+- En que estados posibles puede estar la máquina abstracta?
+- Oz que alcance tiene? como se modificaria para logra alcance dinámico?
+- Cabe aclarar que es posible realizar el chequeo de tipos estáticamente en
+  el lenguaje núcleo declarativo definido (aún sin cambiar su sintaxis, cómo?)
+- Oz es de tipado seguro?
+- A Oz le serviria tener un garbage collector?
+- Que es un término?
+- Cuando dos expresiones unifican?
+- Propiedades del operador '='
+- Explicar el algoritmo de unificación
+- Como funciona el operador ==? (hace la equivalencia estructural)
+- Como funciona por abajo la equivalencia estructural? (grafo que chequea)
+- Explicar la excepciones en declarativo
+- Se deja como ejercicio proponer una extensión sencilla del modelo que
+  satisfaga las siguientes condiciones
+- Cual es la técnica básica para escribir programas en declarativo?
+- Que es la programación/funciones del alto orden?
+- Que es un lenguaje de especificación? para que peuden ser útiles?
+- Que es una computación iterativa? Como se hacen en el modelo declarativo?
+- Que es una función/computación recursiva?
+- La recursion se presenta de dos maneras. Cuales son?
+- Porque la funciones recursivas estan relacionas con los datos recursivos
+- Como es la pila en una computacion iterativa (recursiva a la cola)?
+- Cuando es inevitable no usar recursion a la cola? (calculos con árboles)
+- Como se transforma una función que no es recursiva a la cola a
+  recursiva a la cola?
+- Que significa la programación de alto orden?
+- Cuales son las cuatro operaciones básicas que subyacen a todas las
+  técnicas de programación de alto orden?
+- Ventaja de usar currificación
+- Modificar la semántica del lenguaje kernel para que tenga alcance dinámico,
+  es decir, una invocación a un procedimiento se evalúa en el ambiente de su
+  invocante. Ejecutar el programa con la nueva semántica para verificar que
+  la salida del programa sería
+
+Capitulo 3: el modelo declarativo (slides)
+- Explicar la ligadura (binding) -> que es con el operador '='
+- Que es una computación? (en el contexto de la maquina abstracta)
+- En que estados puede estar una pila semántica?
+- Características de programación declarativa
+- Cual es el problema de los lenguajes de especificación?
+- Características de computación recursiva
+- Como convertir una computación recursiva en iterativa
+- Hablar sobre programación de alto orden y las técnicas subyacentes
+- Que es un error?
+- Que cosas pueden producir un error?
+
+Capitulo 3: el modelo declarativo (preguntas anotadas)
+- Un ambiente es una función?
+- Las varables que no tengan un identificador que las referencien que son?
+- Cuando en un proc guardo el ambien especial, que estoy implementando?
+- Que produce si intento ligar/unificar 2 registros?
+- Que tipo de pasaje de parametro tiene oz?
+- Como es que se peude simular el estado en declarativo?
+- Que tiene que ver la generalización con alto orden? y con las otras
+  técnicas que subyacen a la prog alto orden?
+- Por que por ejemplo en haskell se permite hacer una evaluación parcial de
+  las funciones? (relacionado con la currificación)
+- Ir probando conceptos de la materia en otros lenguajes. Por ejemplo:
+  todos los leng declarativos me permiten pasar func como param o retornarlas?
+- En relacional las relaciones tomarán relaciones como parámetro y
+  devuelven relaciones?
+- Hay problemas que naturalmente se modelan con estado. Esto es posible
+  hacerlo en funcional con haskell a travez de la mónadas por ej.
+  Que son las mónadas?
+- El embebimiento se usa en OOP oz?
+
+Capitulo 3: el modelo declarativo (drive)
+- Que Comprende el Modelo Declarativo? y por que es mas "seguro" programar
+  en p. declarativo ?
+- Aliasing en L. Declarativo?? genera problemas?
+- Lenguaje de Especificacion?
+- Programacion de Alto-Orden
+- Qué es la computación Recursiva y que es la computación Iterativa?
+- Dar un ejemplo de una iteración recursiva y de una iterativa
+-
+
+
+
 Cosas Random:
 - Ejemplos de lenguajes para cada cosa
 - Acordarse que la concurrencia tambien es un paradigma (transversal a todos)
@@ -153,3 +261,17 @@ suelen usar equivalencia por nombre para garantizar seguridad de tipos y evitar 
 
 Lenguajes más dinámicos o con tipado estructural (TypeScript, Go, Python)
 tienden a usar equivalencia estructural, priorizando flexibilidad sobre rigidez.
+
+Como vimos en la sección 2.5 del capítulo 2, el mecanismo de control de excepciones
+debe producir un "salto" desde el interior de un componente hasta su frontera
+
+La declaración catch es una "marca" sobre la pila semántica que define
+la frontera del contexto que captura la excepción.
+
+Para que 2 variables se liguen, si o si deben unificar
+
+definir la semantantica para el try raise (excepciones) en declarativo
+cuando hay una sentencia con un try podría pushear en la pila la sentencia
+que atrapa la excepción y ejecuta código. Entonces cuando hay un error se
+comienzan a desapilar las sentencias hasta llegar al manejador de la excepción
+
