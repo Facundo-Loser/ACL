@@ -236,6 +236,8 @@ Capitulo 3: el modelo declarativo (preguntas anotadas)
   hacerlo en funcional con haskell a travez de la mónadas por ej.
   Que son las mónadas?
 - El embebimiento se usa en OOP oz?
+- las 4 tecnicas que subyacen a la prog alto orden probarlas si se
+  pueden en relacional prolog y en imperativo/OOP
 
 Capitulo 3: el modelo declarativo (drive)
 - Que Comprende el Modelo Declarativo? y por que es mas "seguro" programar
@@ -245,7 +247,101 @@ Capitulo 3: el modelo declarativo (drive)
 - Programacion de Alto-Orden
 - Qué es la computación Recursiva y que es la computación Iterativa?
 - Dar un ejemplo de una iteración recursiva y de una iterativa
--
+
+
+
+
+Capitulo 4: Lenguajes funcionales (libro)
+- Lisp es un lenguaje funcional puro?
+- Características principales y conceptos de la programación funcional
+- Que son las funciones puras?
+- Porque en funcional uno puede evaluar de la forma que quiera
+  a las funciones?
+- Dar ejemplos de una traducción de una función iterativa (recursiva a la
+  cola) a un ciclo while en imperativo o viceversa
+- Dar un ejemplo traduciendo algun problema de imperativo a funcional
+- Ventajas y desventajas respecto a la programación imperativa
+- Que es el calculo lambda?
+- Como se define una expresión lambda inductivamente?
+- Como se definen las varaibles libres de una exp lambda recursivamente?
+- Que reducciones y conversiones hay?
+- Definición de función computable
+- Es posible crear un algoritmo que tome 2 exp lambda y retorne true o
+  false si estas son iguales o no?
+- En otros lenguajes declarativos e imperativos se pueden usar func lambda?
+- Cuando una expresión esta en forma normal?
+- Que es un redex?
+- Explicar las estrategias de reducción/ordenes de evaluación
+- Que lenguajes de programación utilización la evaluación
+  con orden aplicativo?
+- Como se implementa la evaluación lazy en C/C++?
+- Porque el orden aplicativo no es una estrategia normalizante?
+- Ventajas y desventajs de orden normal
+- Ventajas y desventajas de orden aplicativo
+- Explicar un poco de Lisp (tipado, compilado/interpretado, alcance, etc)
+- Que tipos de datos tiene Lisp?
+- En Lisp como esta implementada por abajo una lista?
+- Lisp soporte definición de expresiones lambda?
+- Que tipo de orden de evaluación usa Lisp?
+- Porque Lisp no es un lenguaje funcional puro? las variables son mutables?
+- En que campos se usa Lisp?
+- Explicar un poco de ML (que orden de evaluación tiene? que alcance?)
+- Porque ML se considera un lenguaje funcional con
+  características imperativas
+- Explicar un poco de Haskell
+- En ML se puede ahcer sobrecarga de funciones sino coloco los tipos?
+- Hablar algo de Ocaml (derivado de ML)
+- Porque Ocaml no es un lenguaje funcional puro?
+- Haskell es un lenguaje basado en expresiones?
+- Las funciones en haskell son currificadas?
+- Hay funciones lambda en haskell?
+- Que orden de evaluación usa haskell?
+- Dar una ventaja y desventaja de evaluación perezosa
+- Para que se usan las clases en Haskell?
+- Diferencias entre clases en haskell y OOP
+
+Capitulo 4: Lenguajes funcionales (slides)
+- En que se basa la programación funcional?
+- Características principales de la programación funcional
+- Que es una computación en calculo lambda?
+- Como se relaciona el calculo lambda con la currificación?
+- Para que el lenguaje nucleo definido sea funcional puro que se debería
+  restringir con que? (Oz)
+- Que orden de evaluación usa Oz? (modelo declarativo dado)
+- Como se hace el razonamiento sobre programas en funcional?
+- Que es un lenguaje orientado a expresiones?
+- Lisp tiene evaluación aplicativa, pero como se peude simular
+  la evaluación normal?
+- Que me permite hacer la evaluación lazy en haskell por ejemplo?
+
+Capitulo 4: Lenguajes funcionales (preguntas anotadas)
+- Que es una aplicación?
+- Cuando una expresión esta en su forma normal?
+- El orden de evaluación tiene similitud con los pasaje de parámetro en
+  imperativo. A que se asemeja C?
+- El pasaje por copia a que se orden de evaluación se asemeja?
+- Porque en imperativo el orden de evalación call-by-name es poco
+  implementable? dar ejemplo (tiene que ver con los efectos colaterales)
+- Dar un ejemplo donde la evaluación normal/aplicativo es + eficiente
+- Cual es el orden de evaluación mas usado en imperativo?
+- Dar una aplicación en la cual sin importar el orden de evaluación
+  caiga en ciclo infinito
+- Que es una reducción alpha? Dar un ejemplo dónde sería útil
+- Desventaja de usar orden de evaluación normal/call-by-name en imperativo
+- Tener ejemplos de normal vs aplicativo
+- Porque en funcional da lo mismo evaluar con un orden u otro?
+- Todas las abstracciones lambda estan currificadas?
+- Que hacemos con calulo lambda
+-  Proponer cambios en la sintaxis y semántica del lenguaje kernel para
+   convertirlo en un lenguaje funcional puro.
+- En funcional por ejemplo haskell se pueden meter funciones dentro de
+  estructuras? (embebimiento)
+- Como coperan las funciones en funcional?
+
+Capitulo 4: Lenguajes funcionales (drive)
+- Características de las programación funcional
+- Ventajas y desventajas con respecto a la programación imperativa
+
 
 
 
@@ -254,7 +350,8 @@ Cosas Random:
 - Acordarse que la concurrencia tambien es un paradigma (transversal a todos)
 - python tiene sist de tipos seguro
 - Practicar todas las preuntas teoricas de los ejercicios del libro?
-- Lenguajes: C/C++, Java, Haskell, Lisp, Perl, Prolog, Java, Fortran, Pascal, Erlang, Oz
+- Lenguajes: C/C++, Java, Haskell, Lisp, Perl, Prolog, Java, Fortran,
+  Pascal, Erlang, Oz, ML, Eiffel, Scheme
 
 Lenguajes fuertemente tipados y compilados (C, C++, Java, Rust, Ada, C#)
 suelen usar equivalencia por nombre para garantizar seguridad de tipos y evitar confusiones.
@@ -275,3 +372,10 @@ cuando hay una sentencia con un try podría pushear en la pila la sentencia
 que atrapa la excepción y ejecuta código. Entonces cuando hay un error se
 comienzan a desapilar las sentencias hasta llegar al manejador de la excepción
 
+- Como se hace el razonamiento sobre programas en relacional?
+
+- En haskell el chequeo de tipos es muy rico. Es estático y lo que no defini te lo infiere
+- En leng funcional sus sentencias son funciones puras
+- Funcional: principal tecnica de prog es la recursion (a la cola y no) / técnicas de alto orden
+- En leng relacional sus sentencias son relaciones
+-
