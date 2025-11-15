@@ -1,2 +1,3 @@
 - diferencia fundamental entre orden aplicativo y call-by-value cual es?
+- Hablar un poco sobre el paradigma lógico/relacional
 -

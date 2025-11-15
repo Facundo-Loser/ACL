@@ -344,6 +344,84 @@ Capitulo 4: Lenguajes funcionales (drive)
 
 
 
+Capitulo 5: Programación Relacional (libro)
+- Como es el procedimiento relación?
+- Desventaja de flexibilidad de prog relacional?
+- Explicar las sentencias choice y fail
+- Como se ejecuta un programa relacional? (árbol de busqueda)
+- Que es la búsqueda encapsulada en un programa relacional?
+- En un prog relacional las variables pueden tener múltiples ligaduras?
+- Porque es importante la búsqueda encapsulada?
+- Prolog tiene modularidad y composicionalidad?
+- Que hace la función 'Solve' de Oz?
+- Porque el modelo computacional declarativo y relacional estan muy ligados
+  al lógico?
+- Como son los programas en la programación lógica?
+- Explicar un poco del paradigma lógico
+- En que consiste un programa lógico?
+- Decir problemas del probador de teoremas
+- De que forma podemos ayudar a solucionar los
+  problemas del probador de teoremas?
+- De que formas se puede ver a un programa lógico?
+- Que produce una consulta del probador de teoremas?
+- Explicar como traducir de programa relacional a formula lógica
+- Una semántica lógica se peude corresponder con muchas
+  semánticas operacionales?
+- Explicar la semantica operacional y la lógica
+- En que consiste escribir un programa lógico?
+- Explicar un poco Prolog
+- Como son los programas en Prolog?
+- Como funciona por abajo Prolog?
+- Elementos básicos de un programa Prolog
+- Que es una clausula en Prolog?
+- Que son las clausulas de Horn?
+- Que tipos de clausulas de Horn existen?
+- En que se basa la ejecución de un programa Prolog?
+- Explicar el principio de resolución
+- Explicar la unificación y backtraking
+- Explicar la forma clausal y las clausulas de Horn
+- Explicar el principio de resolución de robinson
+- Que es una unificación en prolog?
+- Que es el principio de resolución SLD?
+- Como es la unificación y regla de resolución en Prolog?
+- Que es una sustitución?
+- Como es la composición de sustituciones?
+- Como es el algoritmo apra saber si 2 atomos son unificables?
+- Como es la estrategia de resolución usada en Prolog?
+- Como se representa el espacio de búsqueda en Prolog?
+- Explicar el predicado cut !
+- Cual es el problema de la negación?
+- Que es el predicado fail?
+
+Capitulo 5: Programación Relacional (slides)
+- Que es la Programación Relacional?
+- El Modelo de Computación Relacional
+- Implementación del modelo de computación relacional
+- Relación con la programación logica?
+- Lenguaje de programación relacional PROLOG
+- Que aplicaciones tiene la programación relacional?
+- Decir ventajas y desventajas de prog relacional
+- Que características tienen los probadores de teoremas?
+
+Capitulo 5: Programación Relacional (preguntas anotadas)
+- Se podría usar concurrencia en Prolog?
+- Porque Prolog no es puramente declarativo?
+- Porque en prolog las funciones y predicados en el fondo
+  son todo los mismo: predicados?
+- Dar algun ejemplo para ! (busqueda de un elem / pertenece elem a la lista)
+- Dar un ejemplo de para el problema de al negación
+- Los ambientes son funciones?
+
+Capitulo 5: Programación Relacional (drive)
+- Explicame un poco el PARADIGMA relacional..( características principales)
+- Se puede pasar fácilmente de un programa relacional a uno imperativo? (dar un ejemplo)
+- Que es un Árbol de Búsqueda?
+- Como funciona Prolog?
+- Me dio un problema y me dijo cómo lo resolvería con OO
+- Diferencia entre un lenguaje de programación y uno de especificación.
+
+
+
 
 Cosas Random:
 - Ejemplos de lenguajes para cada cosa
@@ -378,4 +456,41 @@ comienzan a desapilar las sentencias hasta llegar al manejador de la excepción
 - En leng funcional sus sentencias son funciones puras
 - Funcional: principal tecnica de prog es la recursion (a la cola y no) / técnicas de alto orden
 - En leng relacional sus sentencias son relaciones
--
+
+El procedimiento relación sirve para:
+Esta flexibilidad resulta apropiada para el desarrollo de aplicaciones en áreas como Sistemas Expertos 1
+, Procesamiento del lenguaje humano, entre otras.
+
+Porgramación lógica:
+Esto significa que en lugar de basarse, como en el
+caso de los paradigmas procedurales, en el planteo del algoritmo para la resolución del
+problema, se basa en expresar todas las condiciones del problema y luego buscar un
+objetivo dentro de las declaraciones realizadas
+
+Excelente pregunta. Esto suele confundir porque en la teoría del SLD-tree
+las ramas tienen bindings independientes, pero en la ejecución real de
+Prolog NO hay encapsulación: el motor de backtracking reutiliza el mismo
+entorno global y las ligaduras sí se “deshacen” y “rehacen” globalmente.
+
+2. En la implementación real de Prolog, los bindings se realizan
+en un entorno global (osea cada rama no tiene un ambiente independiente)
+
+Cuando Prolog intenta otra alternativa por backtracking, NO crea un mundo nuevo:
+→ revierte (undo) los bindings hechos, y luego crea otros nuevos en ese mismo ambiente.
+
+la ligadura queda en un stack global de ejecución (stack de ambientes / trail).
+
+5. ¿Y por qué Prolog no es modular ni composicional en ese sentido?
+Porque el backtracking y los bindings afectan el entorno global del programa.
+Si dos búsquedas se ejecutan a la vez, compiten por el mismo trail.
+No puedo encapsular una búsqueda dentro de otra sin romper bindings externos.
+Las variables del contexto externo se ligan y desligan durante la búsqueda (global backtracking).
+Por eso decimos que Prolog tiene backtracking global y bindings visibles.
+
+la semántica operacional esta dada por la semántica del modelo declarativo
+
+Los programas en el modelo declarativo tienen tanto una semántica lógica como operacional.
+
+el probador de teoremas usa las cláusulas de Horn y las
+ejecuta basandose en una regla de inferencia: modus
+ponens
