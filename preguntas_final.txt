@@ -386,7 +386,7 @@ Capitulo 5: Programación Relacional (libro)
 - Como es la unificación y regla de resolución en Prolog?
 - Que es una sustitución?
 - Como es la composición de sustituciones?
-- Como es el algoritmo apra saber si 2 atomos son unificables?
+- Como es el algoritmo para saber si 2 atomos son unificables?
 - Como es la estrategia de resolución usada en Prolog?
 - Como se representa el espacio de búsqueda en Prolog?
 - Explicar el predicado cut !
@@ -411,6 +411,8 @@ Capitulo 5: Programación Relacional (preguntas anotadas)
 - Dar algun ejemplo para ! (busqueda de un elem / pertenece elem a la lista)
 - Dar un ejemplo de para el problema de al negación
 - Los ambientes son funciones?
+- Analizar cosas como el tipo de pasaje de parametro, tipado estatico o
+  dinámico?, alcance estático o dinámico? alto orden? en Prolog
 
 Capitulo 5: Programación Relacional (drive)
 - Explicame un poco el PARADIGMA relacional..( características principales)
