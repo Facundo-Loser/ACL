@@ -337,6 +337,7 @@ Capitulo 4: Lenguajes funcionales (preguntas anotadas)
 - En funcional por ejemplo haskell se pueden meter funciones dentro de
   estructuras? (embebimiento)
 - Como coperan las funciones en funcional?
+- Que es una función total y parcial? haskell permite funciones parciales?
 
 Capitulo 4: Lenguajes funcionales (drive)
 - Características de las programación funcional
@@ -425,6 +426,124 @@ Capitulo 5: Programación Relacional (drive)
 
 
 
+Capitulo 6: el modelo con estado (statefull) (libro)
+- Como es el modelo con estado, que permite?
+- Por medio de que operador se cambia el estado de las variables?
+- En que se enfoca el modelo imperativo?
+- En el modelo declarativo el concepto de estado esta implicito. Dónde?
+- Como es la memoria en imperativo y en declarativo?
+- Que son las celdas? que denota una celda?
+- Que es una referencia? (variable)
+- Diferencia entre referecias en C++ y Java
+- Que es la referenciación implicita?
+- Que es un puntero? diferencia respecto a una referencia?
+- Como puede verse una referencia? (TAD)
+- Que operaciones básicas hay sobre celdas? (oZ)
+- La asignación retorna algo en C/C++/Oz?
+- A donde van a para los identificadores de celdas en un lenguaje
+  interpretado y en uno compilado?
+- En la maquina abstracta cuando una variable es alcanzable? (celdas)
+- Que es aliasing? Cual es el problema que tiene?
+- Porque las abstracciones de datos son adecuadas en el modelo con estado
+  explícito? (relación al aliasing)
+- Cual es la idea básica de la abstracción de datos? /
+  que problema ayudan a reducir?
+- Que es la igualdad de tokens?
+- La comparación de dos punteros que apuntas a direcciones distintas
+  pero con mismos valores dentro que debería dar?
+  int a = 1; int b = 1; int* p1 = &a; int* p2 = &b; (p1 == p2) ?
+- En construcción de sistemas con estado, que propiedades deberían tener?
+- Que es un efecto colateral?
+- Que problemas hacen dificil el razonamiento en imperativo?
+- En que ayuda el encapsulamiento?
+- Que semantica de lenguaje se suele usar en imperativo?
+- Que métodos/técnicas de razonamiento hay en imperativo?
+- Que es un invariante?
+- Que es la precondición, postcondición e invariante?
+- Que es la programación basada en componentes? Que es un componente?
+- Como se construyen los sistemas basados en componentes?
+- Que es una abstracción procedural?
+- Para que una abstracción pueda reutilizarse que debe pasar?
+- Que son los parametros formales y los actuales/reales?
+- Que define un tipo de pasaje de parametro?
+- Explicar todos los tipos de pasaje de parametros
+- Que es el pasaje por variable o dirección?
+
+Capitulo 6: el modelo con estado (statefull) (slides)
+- Que es un estado?
+- Que es un estado explícito?
+- Características del estado explícito
+- El aliasing peude causar efectos colaterales?
+- En el modelo con estado explícito, las abstracciones ayudan a reducir
+  el aliasing?
+
+Capitulo 6: el modelo con estado (statefull) (preguntas anotadas)
+- Como programo en imperativo?
+- La memoria a largo plazo en un lenguaje que son?
+- Como resuelvo los problemas en declarativo y como en imperativo?
+- El lenguaje máquina/assembly es imperativo? se asemeja a imperativo?
+- En declarativo como estaba el estado de manera implícita?
+- Decir ventajas y desventajas de imperativo
+- Hay transparencia referencial en imperativo?
+- Las celdas en Oz en los lenguajes como C/C++, Pascal a que es similar?
+- Porque el pasaje por nombre se usa muy poco en imperativo?
+- Que devuelve la asignación en C? es uan función que asigna y devuelve algo
+- Que cosas permiten minimizar los TAD?
+- Relacionar los tipos de pasaje de parametros con los ordenes de evaluación
+- Dar ejemplos de lenguajes para cada tipo de pasaje de parametro
+- Porque no se suele hacer interprete de lenguajes imperativos? (es +
+  sencillo traducir a lenguaje máquina)
+- En dónde estaban  los cambios de estado en declarativo?
+- Cuales son los 3 principios que me debería tener
+  cualquier lenguaje imperativo?
+- En imperativo las funciones son puras?
+- Ejemplos dónde se use cada tipo de pasaje de parámetro
+- Dar un ejemplo de una función e invocación dónde puede haber
+  drama con el tipo de pasaje de parametro por valor-resultado (video
+  tiene que ver con el orden en que se copian los parametros)
+- Estudiar tipo pasaje de parametros de varios lenguajes
+  (C/C++/JAVA/PASCAL/Python)
+- Ejemplos de lenguajes imperativos
+- Ventajas y desventajas de cada tipo de pasaje de parametro
+- Functores/modulos en haskell
+
+Capitulo 6: el modelo con estado (statefull) (drive)
+- Hablame del pasaje de parametros mas dificil, del pasaje por nombre...
+- Concepto de Estado entre Declarativo, funcional e imperativo
+- Idea básica del modelo de estado, y concepto de celda
+- Define Aliasing y la relación con ADT
+- Que relacion habia entre pasaje de parametros y calculo lambda?
+
+
+
+Capitulo 7: Lenguajes de programación imperativos (libro)
+- Declaraciones y definiciones de lenguajes imperativos
+- Que es una expresión y que es un comando?
+- En algunos lenguajes la asignación es un comando
+  y en otros es una expresión. Dar ejemplos de cada uno
+- Dar ejemplos de lenguajes monomorficos
+- Dar algunos comandos comunes
+- Hablar un poco de las excepciones. Hablar sobre como es
+  la prograpagación de la excepción
+- Hablar un poco sobre C
+- Que hace el pre-procesador de C?
+- Dierencia entre una macro y una función en C?
+- Como implementar el polimorfismo paramétrico en C?
+
+Capitulo 7: Lenguajes de programación imperativos (slides)
+- Que es una expresión y que es un comando?
+
+Capitulo 7: Lenguajes de programación imperativos (preguntas anotadas)
+- El polimorfismo de parametros en haskell es sobrecarga eso?
+- El polimorfismo por sobrecarga es el mas usado en
+  el paradigma imperativo
+
+Capitulo 7: Lenguajes de programación imperativos (drive)
+- Polimorfismo parametrico en C
+
+
+
+
 Cosas Random:
 - Ejemplos de lenguajes para cada cosa
 - Acordarse que la concurrencia tambien es un paradigma (transversal a todos)
@@ -496,3 +615,9 @@ Los programas en el modelo declarativo tienen tanto una semántica lógica como 
 el probador de teoremas usa las cláusulas de Horn y las
 ejecuta basandose en una regla de inferencia: modus
 ponens
+
+Existen lenguajes, como Pascal y C++ que contiene ambos tipos de datos: referencias y punteros. Otros, como Java sólo tienen referencias
+
+al bruno le pregunto algo de haskell como hace con la evaluación lazy, de un caso en el que incluso con la evaluacion lazy no terminaba nuca o algo asi
+
+El estado de un componente viene dado por sus atributos
