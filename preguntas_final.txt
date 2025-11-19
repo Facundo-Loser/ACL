@@ -643,7 +643,7 @@ Capitulo 9: Programación orientada a objetos (libro)
 - Que es una clase?
 - Como es la invocación de métodos por medio de mensajes?
 - Diferencia entre invocar métodos por mensaje y con '.'
-- Ventajas y desventajas de llmar métodos por mensaje
+- Ventajas y desventajas de llamar métodos por mensaje
 - En invocación de métodos por mensajes es posible ver al objeto como un
   'dispatcher', por que?
 - En Oz porque New {Object Init(...)} tiene alto orden?
@@ -690,7 +690,7 @@ Capitulo 9: Programación orientada a objetos (libro)
 - Como es la vision estructural para diseñar jerarquia de clases?
 - Como se logra el polimorfismo en OOP?
 - Que requieren las operaciones para lograr el polimorfismo por herencia?
-- Que es necesario apra tener polimorfismo por ehrencia en OOP?
+- Que es necesario para tener polimorfismo por herencia en OOP?
 - Como es el polimorfismo por inclusión?
 - Que es un método abstracto?
 - Que es una clase abstracta?
@@ -734,13 +734,13 @@ Capitulo 9: Programación orientada a objetos (preguntas anotadas)
 - Que lenguajes usan la invocación de métodos por mensaje? (Objective-C,
   SmallTalk)
 - Que hace la palabra final en java?
-- Si la invocación ametodos es por mensaje, existe el problema de
+- Si la invocación a metodos es por mensaje, existe el problema de
   dispatching estático y dinámico?
 - Como seran las tablas virtuales si usamos herencia múltiple?
   Que problema hay?
 - Resolver el problema del rombo en C++ y python
 - En que parte java guarda las tablas virtuales si es una VM? (meta-space)
-- Como se peuden crear en Java y C++ TADS heteregeneos? (por ejemplo
+- Como se pueden crear en Java y C++ TADS heteregeneos? (por ejemplo
   listas heterogeneas?)
 - En lenguajes como C++ o Java, podemos hablar de mensajes o son en realidad
   invocaciones a procedimientos? Justiticar la respuesta.
@@ -749,15 +749,15 @@ Capitulo 9: Programación orientada a objetos (preguntas anotadas)
 - Mostrar con un ejemplo que en Java utiliza dynamic dispatching y C++ utiliza
   static dispatching por default. Como hacer en C++ para que un método trabaje
   con dynamic dispatching.
--  Determinar si el destino (target) de la siguiente expresión puede ser
-   determinada estáticamente o no: ...  super.m();  ... Justificar la respuesta
+- Determinar si el destino (target) de la siguiente expresión puede ser
+  determinada estáticamente o no: ...  super.m();  ... Justificar la respuesta
 - Explicar como se puede resolver el problema del rombo (con herencia múltiple)
   en C++ y Python. Haga un experimento en ambos lenguajes
 - Como se hace para usar parametros variables en Java?
 - Dar un ejemplo de cómo se puede implementar un diseño con herencia múltiple
   en Eiffel.
 - En que sistemas es útil ahcer invocaciones a métodos por mensaje?
-- Como implementarias por abajo para psar en java o C un número variable
+- Como implementarias por abajo para pasar en java o C un número variable
   de parametros a una función?
 - El dispatching estático, que no me permite hacer?
 - Cuando algo esta sobrecargado y cuando redefino?
@@ -768,9 +768,18 @@ Capitulo 9: Programación orientada a objetos (preguntas anotadas)
   y de una clase?
 - Como funciona por abajo la genericidad en Java y C++?
 - Que me ayuda a minimizar la OOP?
-- Como imito las varaibles globales en OOP?
+- Como imito las varaibles globales en OOP? por ejemplo en Java
 - Como imitaria esto de funcional pero en OOP (algo que me de el profe)
 - Que desventajas y ventajas tiene OOP?
+- Para que situaciones serían útiles las clases abstractas e interfaces?
+- Como hacer delegación y redirección en python?
+- Ventajas y desventajas de instrospeccion e intrusión (reflexión)
+- Cuando sería útil usar herencia múltiple?
+- Se podría combinar la genericidad y el polimorfismo por inclusión?
+- Los algoritmos STL de C++ son algo parecido o es lo mismo que
+  la genericidad en funcional?
+- Que es la genericidad restringida?
+- Dar un ejemplo dónde sería útil la genericidad restringida
 
 Capitulo 9: Programación orientada a objetos (drive)
 - Herencia
@@ -784,7 +793,9 @@ Capitulo 9: Programación orientada a objetos (drive)
 - Que dispatching usa java? que dispatching usa c++?
 - Genericidad
 - en que parte de la memoria esta las tablas que se utilizan para implementar los metodos
-virtuales de dynamic dispatch?
+  virtuales de dynamic dispatch?
+
+
 
 
 Capitulo 10:
