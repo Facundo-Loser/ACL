@@ -414,6 +414,7 @@ Capitulo 5: Programación Relacional (preguntas anotadas)
 - Los ambientes son funciones?
 - Analizar cosas como el tipo de pasaje de parametro, tipado estatico o
   dinámico?, alcance estático o dinámico? alto orden? en Prolog
+- Resolver N reinas o tateti en prolog
 
 Capitulo 5: Programación Relacional (drive)
 - Explicame un poco el PARADIGMA relacional..( características principales)
@@ -780,6 +781,14 @@ Capitulo 9: Programación orientada a objetos (preguntas anotadas)
   la genericidad en funcional?
 - Que es la genericidad restringida?
 - Dar un ejemplo dónde sería útil la genericidad restringida
+- En python puedo crear clases genéricas. Para que sirven estas si python
+  ya es de tipado dinámico?
+- Diferencia entre una clase abstracta y una interfaz
+- En java una clase abstracta puede tener constructor?
+- En java como puedo hacer para creaar objetos de una clase si el constructor
+  es privado?
+- Si uso notify en lugar de notifyAll en java puedo caer en una especie
+  de deadlock?
 
 Capitulo 9: Programación orientada a objetos (drive)
 - Herencia
@@ -797,9 +806,153 @@ Capitulo 9: Programación orientada a objetos (drive)
 
 
 
+Capitulo 10: Concurrencia (libro)
+- Que es un programa concurrente?
+- Dar ejemplos de casos dónde es útil usar concurrencia
+- En que esquemas se peuden clasificar los modelos de ejecución concurrente?
+  Explicar cada uno.
+- Ambos modelos de concurrencia son equivalentes en poder expresivo?
+- Hablar un poco de concurrencia en declarativo
+- Que son las varaibles data-flow? Que resultados importantes arroja? (2
+  características)
+- Cual es la semántica de un thread en Oz?
+- Que es un scheduler, que hace?
+- En que estados puede estar un thread?
+- Como es el mecanismo de sincronización entre thread data-flow/data-driven?
+- Hablar de ordenes de ejecución. Que es una traza de ejecución?
+- Que es el interleaving?
+- Que característica tiene la ejecución de un programa concurrente?
+- Que es el orden causal?
+- Que es una restricción/constraint? (relacionado con las ligaduras)
+- Que puede ocurri con la ejecucipon de un programa concurrente
+  en declarativo?
+- Porque en el modelo concurrente declarativo se dice que hay no
+  determinismo no observable?
+- Que es un Scheduler? que características deseables debería tener?
+- Que diferentes prioridades de ejecución de threads existen?
+- Que es el context-switch?
+- Que cosa mala/desventaja tiene el context-switch?
+- Generalmente porque motive el scheduler suele seleccionar otro thread?
+- Que es el quantum?
+- Que es la concurrencia coperativa? (Threads)
+- En un sist operativo cada programa en ejecución que es?
+- Que operaciones se pueden realizar sobre threads? (Oz)
+- Que son las corrutinas? Que operaciones existen para crearlas y
+  manejarlas?
+- Que es una barrera?
+- Que es la ejecución perezosa/lazy?
+- Que es un ByNeed trigger? (Oz)
+- Diferencia entre evaluación lazy y ejecución lazy
+- Decir algunas aplicaciones de la ejecución lazy
+- Que es una aplicación de tiempo real blando? y tiempo real fuerte?
+- Como se relaciona la concurrencia con el mecanismo de excepciones?
+- Que es la sincronización de threads? de que maneras peude hacerse?
+- En un programa la sincronización como puede ser?
+- Como es la concurrencia en el modelo con estado compartido?
+- Que problemas existen con la concurrencia en el modelo con estado
+  compartido?
+- Que son las condiciones de carrera?
+- Dar un ejemplo de un programa con condiciones de carrera
+- Las race conditions porque dificultan el analisis sobre un programa?
+- Que es un punto de sincronización? que es lo que permite?
+- Que es una región crítica?
+- En que consiste principalmente la programación concurrente con
+  estado compartido?
+- Que primitivas o formas de sincronización existen? explicar cada una
+- Cual es el invariante de los semáforos?
+- Dar ejemplos de lenguajes que utilicen los mecanismos de sincronización
+  previamente mencioandos
+- Como es la concurrencia en el pasaje por mensajes?
+- Como pueden ser los canales?
+- Como se podría hacer el problema clásico del productor consumidor
+  con puertos y mensajes?
+- Que es un protocolo de comunicación?
+- Que es un deadlock? Cuales son las condiciones que deben ocurrir
+  para un deadlock?
+- Cual es la desventaja de modelar un sistema para evitar deadlock?
+- Dar un ejemplo de un programa con deadlock
+- Como se resuelve un deadlock?
+- Hablar un poco de la concurrencia en java
+- Que hace wait() y notify en Java? que ahce notifyAll()?
+- Cual es el drama en java si solamente utilizas notify()?
+  Podes caer en un deadlock?
+- Hablar un poco de Erlang y sus características
+- Dar algún ejemplo con erlang
+- Como es el modelo de computación de erlang? En que capas
+  puede ser dividido el lenguaje?
+- Analizar de erlang: paradigma, sistema de tipos, polimorfismo,
+  modelo concurrente. Comunicación sincronica o asincronica. Técnicas de
+  alto orden. Ejemplos de aplicaciones implementadas parcial o
+  totalmente en Erlang.
 
-Capitulo 10:
+Capitulo 10: Concurrencia (slides)
+- Diferencias entre ejecución secuencial y concurrente
+- Porque la concurrencia en declarativo produce no determinismo observable?
+- Tener ejemplos de concurrencia en declarativo
+- Diferenciar entre evaluación perezosa y ejecución perezosa.
+
+Capitulo 10: Concurrencia (preguntas anotadas)
 - La concurrencia es un paradigma?
+- Cuando es útil la concurrencia?
+- Dar ejemplos de sistemas dónde usarias concurrencia con memoria
+  compartida y concurrencia por pasaje de mensajes
+- Es lo mismo concurrencia que paralelismo?
+- Que se debe hacer para lograr un paralelismo real?
+- En el modelo concurrente con pasaje de mensajes existe el problema de las
+  race conditions? y el problema del deadlock?
+- Dar ejemplos de lenguajes que usen el modelo de concurrencia con pasaje de
+  mensajes con canales asincronicos y sincronicos
+- Dar algún ejemplo de productor consumidor
+- Se podría usar concurrencia en prolog?
+- Cuando conviene construir un sist concurrente y cuando no?
+- Relacionar el tema del context-switch con manejo de memoria.
+  Osea que implica hacer un context-switch?
+- El scheduler puede tener varias politicas para ir seleccionando los procesos.
+  Describir algunas y mencionar ventajas y desventajas
+- Porque un context-switch es costoso?
+- En que se relaciona divide & conquer con concurrencia?
+- Hacer el mergesort concurrente
+- Se puede aplicar Concurrencia en haskell? (No tiene sentencias,
+  pero se podría aplicar?)
+- La JVM tiene su propio scheduler?
+- Había un problema de productor-consumidor en Oz y decia que si Oz ahora el tipo
+  de pasaje de parametro era por copia si se rompia o no?
+- Que formas de sincronización hay en decalrativo y cuales
+  hay en imperativo?
+- Que me garantiza un lock?
+- Con cuanto debería inicializarse un semaforo? con que criterio?
+- Final: Se necesita locks o semáforos en el modelo declarativo?
+- Para que podrían servir los semáforos en declarativo?
+- Dar algun ejemplo de espera circular
+- Concurrencia en relacional? que tendría que tener? por ej prolog
+- Diseñar y escribir algun problema concurrente en algún lenguaje
+- Comparar polimorfismo OOP vs Erlang
+- Que es la exclusion mutua?
+
+Capitulo 10: Concurrencia (drive)
+- Concurrencia.. que es concurrencia?"se usa en todos los paradigmas?"
+- Efecto de simultáneo en Concurrencia.
+- Porque son necesarios los mecanismos de sincronización de procesos? que
+  consecuencias puede traer? proponer una solución
+- CONDICIÓN DE CARRERA (haceme un ejemplo donde haya condiciones de carrera)
+- Explicar deadlock, como solucionarlo..
+- cómo solucionarías el problema de las condiciones de carrera? hacelo
+  con semáforos.
+- Hablar un poco de concurrencia en declarativo
+
+
+Preguntas generales y de otros finales:
+- Ventajas y desventajas de cada paradigma
+- FORMAS DE VERIFICAR correctitud de un programa tanto en impera y funcional...
+- Para resolver el problema de las N Reinas.. que modelo usarias y porque?
+- No determinismo observable
+- concurrencia: tipos de sincronizacion. concurrencia con estado compartido y con
+  pasaje de mensajes, como funcionaria productor y consumidor con buffer acotado en
+  concurrencia con pasaje de mansajes.
+- Que mecanismos proveen algunos lenguaje para resolver el problema de herencia
+  multiple?
+- En que parte de la memoria esta las tablas que se utilizan para implementar los metodos
+  virtuales de dynamic dispatch?
 
 
 

@@ -4,4 +4,5 @@
   cuando hago invocación por mensajes)
 - polimorfismo parametrico haskell y genericidad OOP
 - lo de invocación por mensajes?
+- El paradigma lógico y relacional son lo mismo?
 -
