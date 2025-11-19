@@ -1,3 +1,7 @@
 - diferencia fundamental entre orden aplicativo y call-by-value cual es?
 - Hablar un poco sobre el paradigma lógico/relacional
+- Delegación y redirección? como funcionan exactamente? (polimorfismo a nivel de objetos
+  cuando hago invocación por mensajes)
+- polimorfismo parametrico haskell y genericidad OOP
+- lo de invocación por mensajes?
 -

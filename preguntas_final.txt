@@ -544,6 +544,255 @@ Capitulo 7: Lenguajes de programación imperativos (drive)
 
 
 
+Capitulo 8: Manejo de memoria (libro)
+- Que arquitectura tienen las pc? (la mayoria)
+- Que segmentos/bloques de memoria se le asignan a un programa?
+  Describir cada una.
+- Que registros tiene la cpu?
+- En las estructuras de datos orden de llamadas permiten mantener?
+- Como es el manejo de memoria en los primeros lenguajes
+  como Fortran y Cobol?
+- Que ventaja y  desventaja tiene el manejo de memoria en
+  lenguajes como Fortran?
+- Los lenguajes modernos como hacen el manejo de la memoria?
+- Como se implementa por abajo el stack?
+- En dónde se almacena el valor de retorno si la subrutina
+  representa una función?
+- Como se costruye el registro de activación? explicar el
+  proceso de preambulo y epílogo (manejo del heap)
+- Cuando no es necesario el static link?
+- El espacio requerido por var locales se determina estáticamente. Pero en
+  dónde esta la info de cuanto ocupa cada var local?
+- Como se implementa el alcande estático y el
+  dinámico en los registros de activación?
+- Cuando uso static link cual es el costo de ir a buscar la variable
+  que no es local ni parametro?
+- Que es un display?
+- Comparación de usar static link vs dynamic link
+- Que es un valor creado dinámicamente?
+- Como se hace el manejo del heap?
+- Que problemas acarrean manejar el heap manualmente? (por el programador)
+- Que es la basura?
+- Que son las referencias colgadas?
+- Como es el manejador del heap?
+- Como hace el manejo del heap Lisp y Haskell? (ventajas
+  y desventajas de esa forma)
+- Tamaño de bloques del heap heterogeneo vs homogeneo
+- Cual es el problema de la fragmentación del heap?
+- Como se puede solucionar el problema de fragmentación del heap?
+- Ventajas y desventajas de compactación total y parcial
+- Como se hace el manejo automático del heap? explicar los 2 métodos
+- Ventaja y desventaja del manejo de memoria automática
+- Contador de referencia vs recolector de basura
+- Explicar las 3 técnicas de recolector de basura
+- Ventajas y desventajas de cada técnica de recolección de basura
+- Cual es el problema si se usa garbage collector y se estan usando
+  bibliotecas externas? como se soluciona?
+- Que es la finalización?
+
+Capitulo 8: Manejo de memoria (slides)
+-
+
+Capitulo 8: Manejo de memoria (preguntas anotadas)
+- Manejo de memoria que hace Fortran vs lenguajes modernos
+- Desventajas de Fortran
+- Para que sirve la pila
+- Con que es más rápido trabajar: el stack o el heap?
+- Como hacen el manejo de memoria algunos lenguajes?
+  (C/C++, Java, Haskell, Lisp, Python, etc)
+- Que información hay en el archivo objeto?
+- Podría relacionar tipo de pasaje de parametro en el registro de activación
+- Dar un ejemplo en el cual es display es mucho mejor que static link
+- Dar ejemplos de lenguajes que usen static link y otros que usen display
+- Que lenguajes tienen longitud explicita de bloques en el heap y cuales no?
+- Un bloque de memoria puede ser alcanzable directa o indirectamente
+- Que porcentaje de tiempo/recursos debería destinarse al
+  gc y cuanto a la ejecución programa?
+- Como soluciona haskell el problema de la fragmentación?
+- Que criterio usa el garbage collector para dispararse?
+- Relación entre programa/garbage collector y suspensión
+- Comprara cada técnica de garbage collector
+- Dar ejemplos de lenguajes que no usen gc y de lenguajes que si usen
+  gc y ademas dar que técnica usa el gc
+- Que pasa si tengo una función recursiva que no termina nunca?
+- En java puedo regular la capacidad del heap?
+- Que pasa si tengo una función recursiva que se llama a si misma muchas
+  veces si uso static link y si uso display?
+- Si una variable no es decalra el error salta en compilación
+  o ejecución? justificar
+- Bajo la premisa que todos los bloques en el heap referencian a otro
+  bloques significa que no tengo basura? justificar
+- Cuanto tiempo debería insumir el gc y cuanto la ejecución del programa?
+- Java tiene algo en el segmento de datos estático?
+- Que porcentaje de espacio le da Java para cada generación?
+
+Capitulo 8: Manejo de memoria (drive)
+- Qué bloques tiene un proceso (programa en ejecución)?
+- TODO Heap que tiene?, como recolecta basura? (saberlo bien a esto)
+- Manejo automático del Heap
+- Cuáles son los algoritmos de recolección de basura?, y
+  explicar alguno (saber bien el funcionamiento)
+- Manejo del Heap
+
+
+
+
+Capitulo 9: Programación orientada a objetos (libro)
+- Que es un objeto?
+- Que es el encapsulamiento?
+- Que es una clase?
+- Como es la invocación de métodos por medio de mensajes?
+- Diferencia entre invocar métodos por mensaje y con '.'
+- Ventajas y desventajas de llmar métodos por mensaje
+- En invocación de métodos por mensajes es posible ver al objeto como un
+  'dispatcher', por que?
+- En Oz porque New {Object Init(...)} tiene alto orden?
+- Que es una clase? Cuales son las 3 cosas que tiene una clase?
+- Que es una atributo o metodo 'static' en Java?
+- Hablar un poco de Eiffel
+- De que forma se puede inicializar los atributos?
+- Cuando invoco a un método por mensaje uso records. Una invocación puede
+  hacerce de forma estática y dinámica -> explicar cada una. (Oz)
+- Como definir un método con número fijo o variable de argumentos? Dar
+  ejemplo de Java y Python
+- Como se usan argumentos por omisión? dar ejemplo de python
+- Los nombres de los atributos y métodos pueden determinarse dinamicamente
+  en Oz, como?
+- Hablar un poco sobre herencia de clases. Que es la herencia?
+- La herencia define una relación. Que propiedades tiene?
+- Que es herencia múltiple?
+- Cuando un método de la clase B sobreescribe un método de la clase A?
+- Que es una sobre-escritura/override de un método? y la sobrecarga?
+- Explicar dispatching estático y dinámico
+- En Java y C++ como puedo indicar que quiero llamar a un método
+  de la clase padre?
+- Que es self/this en algunos lenguajes de programación OOP?
+- Como se logra determinar el método al que debe invocarse en tiempo
+  de ejecución?
+- Que son las tablas virtuales?
+- Que problema tienen las tablas virtuales?
+- Dispatching estático vs dispatching dinámico. Ventajas y desventajas
+  de cada uno
+- Que desafios de eficiencia acarrea la el dispatching dinámico?
+- Que lenguajes usan tablas virtuales?
+- C++ que dispatching tiene? como se puede hacer dispatching dinámico?
+- C++ permite controlar el tamaño de las tablas virtuales. Como?
+- Que lenguajes usan dispatching dinamico y estatico por omision?
+- Que lenguajes que usan dispatching dinámico por omision permiten usar
+  dispatching estático también mediante keywords?
+- Como se controla el acceso/visibilidad a los componentes de una clase?
+- Como es la visibilidad en Eiffel?
+- Como se llama la clase raiz dela que hereda implicitamente todas
+  las clases en java y Eiffel?
+- En C++ todas las clases heredan implicitamente de otra clase?
+- Que define una clase?
+- Cual es la vision mas adecuada para diseñar la jerarquia de clases?
+- Como es la vision estructural para diseñar jerarquia de clases?
+- Como se logra el polimorfismo en OOP?
+- Que requieren las operaciones para lograr el polimorfismo por herencia?
+- Que es necesario apra tener polimorfismo por ehrencia en OOP?
+- Como es el polimorfismo por inclusión?
+- Que es un método abstracto?
+- Que es una clase abstracta?
+- Que es una interfaz?
+- Si una clase tiene 1 método abstracto, puede tener instancias?
+- Que permite definir una clase abstracta? para que peuden ser útiles?
+- Que es la redirección y delegación? (invocación por mensajes)
+- La delegación a que nivel permite definir jerarquías?
+- Cuando un sistema u objeto es reflexivo?
+- Como se hace la instrospección en Java, Eiffel, Python, C++, etc?
+- Que lenguajes permiten modificar la jerarquia de clases dinámicamente?
+- Que es un meta-protocolo? (a nivel de objetos)
+- Que son los meta-objetos y meta-clases?
+- Que lenguajes proveen meta-clases?
+- Que es un constructor?
+- Que son los destructores? para que sirven?
+- Que es la herencia múltple? Cuales son los 2 problemas tiene?
+- De un ejemplo de como resolvería este problema en algún lenguaje?
+- Hablar un poco de java?
+- Para que sirve static en un atributo o metodo de clase en Java?
+- Como se simula la herencia múltiple usando interfaces en Java?
+- Que es una interfaz en Java?
+- Que es la genericidad/polimorfismo por instanciación?
+- Que lenguajes soportan genericidad? Dar ejemplos
+- Que son los templates de C++?
+- Que es STL en C++?
+- Como son los objetos-función en C++?
+
+Capitulo 9: Programación orientada a objetos (slides)
+- Objetos.
+- Clases.
+- Herencia.
+- Dynamic Binding.
+- Polimorfismo.
+- Genericidad.
+- Que son los métodos virtuales de C++?
+- Desventaja de las tablas virtuales en sistemas grandes
+- Como se logra la genericidad restringida en Java por ejemplo?
+
+Capitulo 9: Programación orientada a objetos (preguntas anotadas)
+- Que lenguajes usan la invocación de métodos por mensaje? (Objective-C,
+  SmallTalk)
+- Que hace la palabra final en java?
+- Si la invocación ametodos es por mensaje, existe el problema de
+  dispatching estático y dinámico?
+- Como seran las tablas virtuales si usamos herencia múltiple?
+  Que problema hay?
+- Resolver el problema del rombo en C++ y python
+- En que parte java guarda las tablas virtuales si es una VM? (meta-space)
+- Como se peuden crear en Java y C++ TADS heteregeneos? (por ejemplo
+  listas heterogeneas?)
+- En lenguajes como C++ o Java, podemos hablar de mensajes o son en realidad
+  invocaciones a procedimientos? Justiticar la respuesta.
+- Describa las ventajas y desventajas de manejar las invocaciones a métodos como
+  mensajes versus invocaciones a procedimientos.
+- Mostrar con un ejemplo que en Java utiliza dynamic dispatching y C++ utiliza
+  static dispatching por default. Como hacer en C++ para que un método trabaje
+  con dynamic dispatching.
+-  Determinar si el destino (target) de la siguiente expresión puede ser
+   determinada estáticamente o no: ...  super.m();  ... Justificar la respuesta
+- Explicar como se puede resolver el problema del rombo (con herencia múltiple)
+  en C++ y Python. Haga un experimento en ambos lenguajes
+- Como se hace para usar parametros variables en Java?
+- Dar un ejemplo de cómo se puede implementar un diseño con herencia múltiple
+  en Eiffel.
+- En que sistemas es útil ahcer invocaciones a métodos por mensaje?
+- Como implementarias por abajo para psar en java o C un número variable
+  de parametros a una función?
+- El dispatching estático, que no me permite hacer?
+- Cuando algo esta sobrecargado y cuando redefino?
+- Como hace primero el chequeo estático java?
+- Que hace el casteo? que me cambia?
+- Como hacer instrospección en Java?
+- En java puedo hacer herencia múltiple heredando de una interfaz
+  y de una clase?
+- Como funciona por abajo la genericidad en Java y C++?
+- Que me ayuda a minimizar la OOP?
+- Como imito las varaibles globales en OOP?
+- Como imitaria esto de funcional pero en OOP (algo que me de el profe)
+- Que desventajas y ventajas tiene OOP?
+
+Capitulo 9: Programación orientada a objetos (drive)
+- Herencia
+- Herencia múltiple, conflictos y solucion
+- Ligadura estática y dinámica (dynamic binding y static binding), ventajas y
+  desventajas tienen los distintos dispatching?
+- diferencia entre imperativo y orientado a objetos (acá hay q nombrar lo q permite el
+  oo...entre ellos en encapsulamiento, por ej)
+- Polimorfismo por inclusión y si posible polimorfismo por inclusión con static
+  dispatching?
+- Que dispatching usa java? que dispatching usa c++?
+- Genericidad
+- en que parte de la memoria esta las tablas que se utilizan para implementar los metodos
+virtuales de dynamic dispatch?
+
+
+Capitulo 10:
+- La concurrencia es un paradigma?
+
+
+
+
 Cosas Random:
 - Ejemplos de lenguajes para cada cosa
 - Acordarse que la concurrencia tambien es un paradigma (transversal a todos)
@@ -621,3 +870,5 @@ Existen lenguajes, como Pascal y C++ que contiene ambos tipos de datos: referenc
 al bruno le pregunto algo de haskell como hace con la evaluación lazy, de un caso en el que incluso con la evaluacion lazy no terminaba nuca o algo asi
 
 El estado de un componente viene dado por sus atributos
+
+- Como se hace para verificar correctitud en el paradigma logico/relacional?
