@@ -809,7 +809,7 @@ Capitulo 9: Programación orientada a objetos (drive)
 Capitulo 10: Concurrencia (libro)
 - Que es un programa concurrente?
 - Dar ejemplos de casos dónde es útil usar concurrencia
-- En que esquemas se peuden clasificar los modelos de ejecución concurrente?
+- En que esquemas se pueden clasificar los modelos de ejecución concurrente?
   Explicar cada uno.
 - Ambos modelos de concurrencia son equivalentes en poder expresivo?
 - Hablar un poco de concurrencia en declarativo
@@ -824,13 +824,13 @@ Capitulo 10: Concurrencia (libro)
 - Que característica tiene la ejecución de un programa concurrente?
 - Que es el orden causal?
 - Que es una restricción/constraint? (relacionado con las ligaduras)
-- Que puede ocurri con la ejecucipon de un programa concurrente
+- Que puede ocurrir con la ejecución de un programa concurrente
   en declarativo?
 - Porque en el modelo concurrente declarativo se dice que hay no
   determinismo no observable?
 - Que es un Scheduler? que características deseables debería tener?
 - Que diferentes prioridades de ejecución de threads existen?
-- Que es el context-switch?
+- Que es el context-switch? que implica hacer un context-switch?
 - Que cosa mala/desventaja tiene el context-switch?
 - Generalmente porque motive el scheduler suele seleccionar otro thread?
 - Que es el quantum?
@@ -893,6 +893,8 @@ Capitulo 10: Concurrencia (slides)
 
 Capitulo 10: Concurrencia (preguntas anotadas)
 - La concurrencia es un paradigma?
+- Cual es la principal ventaja de concurrencia?
+- Desventaja de la concurrencia
 - Cuando es útil la concurrencia?
 - Dar ejemplos de sistemas dónde usarias concurrencia con memoria
   compartida y concurrencia por pasaje de mensajes
@@ -928,6 +930,8 @@ Capitulo 10: Concurrencia (preguntas anotadas)
 - Diseñar y escribir algun problema concurrente en algún lenguaje
 - Comparar polimorfismo OOP vs Erlang
 - Que es la exclusion mutua?
+- Ventajas y desventajas de concurrencia
+- Dar un ejemplo de la videa real de porductor-consumidor (videos -> youtube/netflix...)
 
 Capitulo 10: Concurrencia (drive)
 - Concurrencia.. que es concurrencia?"se usa en todos los paradigmas?"

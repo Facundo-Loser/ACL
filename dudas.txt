@@ -5,4 +5,6 @@
 - polimorfismo parametrico haskell y genericidad OOP
 - lo de invocación por mensajes?
 - El paradigma lógico y relacional son lo mismo?
+- Para el sistema operativo un programa concurrente en realidad es un solo proceso?
+  nada mas que adentro se divide en threads? cada uno con su propio stack y mismo heap y código
 -
