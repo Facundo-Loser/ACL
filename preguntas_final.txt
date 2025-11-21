@@ -984,7 +984,7 @@ Preguntas de un final:
 - Que dispatching usa Java, que dispatching usa c++?
 - Lo compilado va a ser mas rápido pero renuncias a la flexibilidad (dispatching)
 - Siempre programas para interfaces, nunca para implementaciones. Esto del dispatching es un caso mas
--
+
 
 
 
