@@ -494,7 +494,7 @@ Capitulo 6: el modelo con estado (statefull) (preguntas anotadas)
 - Dar ejemplos de lenguajes para cada tipo de pasaje de parametro
 - Porque no se suele hacer interprete de lenguajes imperativos? (es +
   sencillo traducir a lenguaje máquina)
-- En dónde estaban  los cambios de estado en declarativo?
+- En dónde estaban los cambios de estado en declarativo?
 - Cuales son los 3 principios que me debería tener
   cualquier lenguaje imperativo?
 - En imperativo las funciones son puras?
@@ -517,6 +517,7 @@ Capitulo 6: el modelo con estado (statefull) (drive)
 
 
 
+
 Capitulo 7: Lenguajes de programación imperativos (libro)
 - Declaraciones y definiciones de lenguajes imperativos
 - Que es una expresión y que es un comando?
@@ -528,7 +529,7 @@ Capitulo 7: Lenguajes de programación imperativos (libro)
   la prograpagación de la excepción
 - Hablar un poco sobre C
 - Que hace el pre-procesador de C?
-- Dierencia entre una macro y una función en C?
+- Diferencia entre una macro y una función en C?
 - Como implementar el polimorfismo paramétrico en C?
 
 Capitulo 7: Lenguajes de programación imperativos (slides)
@@ -619,8 +620,8 @@ Capitulo 8: Manejo de memoria (preguntas anotadas)
 - En java puedo regular la capacidad del heap?
 - Que pasa si tengo una función recursiva que se llama a si misma muchas
   veces si uso static link y si uso display?
-- Si una variable no es decalra el error salta en compilación
-  o ejecución? justificar
+- Si una variable no es declarada el error salta en compilación
+  o ejecución? justificar (relacionado con el alcance)
 - Bajo la premisa que todos los bloques en el heap referencian a otro
   bloques significa que no tengo basura? justificar
 - Cuanto tiempo debería insumir el gc y cuanto la ejecución del programa?
@@ -697,7 +698,7 @@ Capitulo 9: Programación orientada a objetos (libro)
 - Que es una clase abstracta?
 - Que es una interfaz?
 - Si una clase tiene 1 método abstracto, puede tener instancias?
-- Que permite definir una clase abstracta? para que peuden ser útiles?
+- Que permite definir una clase abstracta? para que pueden ser útiles?
 - Que es la redirección y delegación? (invocación por mensajes)
 - La delegación a que nivel permite definir jerarquías?
 - Cuando un sistema u objeto es reflexivo?
@@ -708,7 +709,7 @@ Capitulo 9: Programación orientada a objetos (libro)
 - Que lenguajes proveen meta-clases?
 - Que es un constructor?
 - Que son los destructores? para que sirven?
-- Que es la herencia múltple? Cuales son los 2 problemas tiene?
+- Que es la herencia múltiple? Cuales son los 2 problemas tiene?
 - De un ejemplo de como resolvería este problema en algún lenguaje?
 - Hablar un poco de java?
 - Para que sirve static en un atributo o metodo de clase en Java?
@@ -769,7 +770,7 @@ Capitulo 9: Programación orientada a objetos (preguntas anotadas)
   y de una clase?
 - Como funciona por abajo la genericidad en Java y C++?
 - Que me ayuda a minimizar la OOP?
-- Como imito las varaibles globales en OOP? por ejemplo en Java
+- Como imito las variables globales en OOP? por ejemplo en Java
 - Como imitaria esto de funcional pero en OOP (algo que me de el profe)
 - Que desventajas y ventajas tiene OOP?
 - Para que situaciones serían útiles las clases abstractas e interfaces?
@@ -785,7 +786,7 @@ Capitulo 9: Programación orientada a objetos (preguntas anotadas)
   ya es de tipado dinámico?
 - Diferencia entre una clase abstracta y una interfaz
 - En java una clase abstracta puede tener constructor?
-- En java como puedo hacer para creaar objetos de una clase si el constructor
+- En java como puedo hacer para crear objetos de una clase si el constructor
   es privado?
 - Si uso notify en lugar de notifyAll en java puedo caer en una especie
   de deadlock?
@@ -803,6 +804,7 @@ Capitulo 9: Programación orientada a objetos (drive)
 - Genericidad
 - en que parte de la memoria esta las tablas que se utilizan para implementar los metodos
   virtuales de dynamic dispatch?
+
 
 
 
