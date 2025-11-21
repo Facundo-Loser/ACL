@@ -863,7 +863,7 @@ Capitulo 10: Concurrencia (libro)
 - Que primitivas o formas de sincronización existen? explicar cada una
 - Cual es el invariante de los semáforos?
 - Dar ejemplos de lenguajes que utilicen los mecanismos de sincronización
-  previamente mencioandos
+  previamente mencionados
 - Como es la concurrencia en el pasaje por mensajes?
 - Como pueden ser los canales?
 - Como se podría hacer el problema clásico del productor consumidor
@@ -960,6 +960,31 @@ Preguntas generales y de otros finales:
 - En que parte de la memoria esta las tablas que se utilizan para implementar los metodos
   virtuales de dynamic dispatch?
 
+
+
+
+Preguntas de un final:
+- Primero pregunto por imperativo
+- Buenas prácticas de programación. Lode parametrizar.
+- Despues funcional. Relacional -> Para cuando me conviene usarlo
+- Que hace el relacional. Tipo como lo hace
+- Eso e imperativo al principio me dejo explayarme y despues se puso específico
+- Polimorfismo y herencia, en orientadoa objetos también me pregunto por dispatching y ligadura
+- Como seria en java y c++ (al idea no es saber java y c++, sino la diferencia de estático con dinámico)
+->Ahi lo importante lo de la memoria, que esta la memoria virtual con los métodos,
+  el stack tiene la variable, el heap los atributos y la memoria virtual los métodos.
+- En c++ no había memoria virtual creo
+- Al principio general después específico
+- Mas que anda saber bien como funciona
+- Concurrencia me pregunto bastante
+- Race conditions, todo lo de deadlock, sincronización (que y para que)
+- Generalización tambien
+- Lenguajes específicos no
+- Despues temas que ya rendimos no (Kernel, Lambda)
+- Que dispatching usa Java, que dispatching usa c++?
+- Lo compilado va a ser mas rápido pero renuncias a la flexibilidad (dispatching)
+- Siempre programas para interfaces, nunca para implementaciones. Esto del dispatching es un caso mas
+-
 
 
 
