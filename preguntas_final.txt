@@ -187,7 +187,7 @@ Capitulo 3: el modelo declarativo (libro)
   satisfaga las siguientes condiciones
 - Cual es la técnica básica para escribir programas en declarativo?
 - Que es la programación/funciones del alto orden?
-- Que es un lenguaje de especificación? para que peuden ser útiles?
+- Que es un lenguaje de especificación? para que pueden ser útiles?
 - Que es una computación iterativa? Como se hacen en el modelo declarativo?
 - Que es una función/computación recursiva?
 - La recursion se presenta de dos maneras. Cuales son?
@@ -220,10 +220,10 @@ Capitulo 3: el modelo declarativo (slides)
 Capitulo 3: el modelo declarativo (preguntas anotadas)
 - Un ambiente es una función?
 - Las varables que no tengan un identificador que las referencien que son?
-- Cuando en un proc guardo el ambien especial, que estoy implementando?
+- Cuando en un proc guardo el ambiente especial, que estoy implementando?
 - Que produce si intento ligar/unificar 2 registros?
 - Que tipo de pasaje de parametro tiene oz?
-- Como es que se peude simular el estado en declarativo?
+- Como es que se puede simular el estado en declarativo?
 - Que tiene que ver la generalización con alto orden? y con las otras
   técnicas que subyacen a la prog alto orden?
 - Por que por ejemplo en haskell se permite hacer una evaluación parcial de
@@ -310,7 +310,7 @@ Capitulo 4: Lenguajes funcionales (slides)
 - Que orden de evaluación usa Oz? (modelo declarativo dado)
 - Como se hace el razonamiento sobre programas en funcional?
 - Que es un lenguaje orientado a expresiones?
-- Lisp tiene evaluación aplicativa, pero como se peude simular
+- Lisp tiene evaluación aplicativa, pero como se puede simular
   la evaluación normal?
 - Que me permite hacer la evaluación lazy en haskell por ejemplo?
 
@@ -342,6 +342,7 @@ Capitulo 4: Lenguajes funcionales (preguntas anotadas)
 Capitulo 4: Lenguajes funcionales (drive)
 - Características de las programación funcional
 - Ventajas y desventajas con respecto a la programación imperativa
+
 
 
 
@@ -984,6 +985,24 @@ Preguntas de un final:
 - Que dispatching usa Java, que dispatching usa c++?
 - Lo compilado va a ser mas rápido pero renuncias a la flexibilidad (dispatching)
 - Siempre programas para interfaces, nunca para implementaciones. Esto del dispatching es un caso mas
+
+
+
+Preguntas random anotadas en cuaderno:
+- Estaría bueno usar concurrencia en declarativo por el hecho de que no hay efectos colaterales
+- Por ejemplo en haskell serviria para problemas del tipo productor/consumidor en
+  dónde el productor en algun punto tuviera que armar la lista buscando datos de una base de datos o esperandolos de un servidor
+- Polimorfismo por ehrencia en final se puede usar un ejemplo
+- Las variables en realidad son direcciones de memoria en leng compilados
+- En declarativo el aliasing no genera problemas
+- Porque Java permite hacer herencia múltiple de interfaces? porque no hay drama acá?
+- Tener un ejemplo preparado para el árbol SLD
+- Concepto de TAD
+- Ver como funcionan por abajo varios lenguajes
+- La JVM es una máquina virtual
+- OOP con msj
+- Hacer una lsita de lenguajes a estudiar
+- Monadas de haskell
 
 
 
