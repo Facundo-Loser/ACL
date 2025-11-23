@@ -168,7 +168,7 @@ Capitulo 3: el modelo declarativo (libro)
 - En declarativo un programa Oz es solo una sentencia?
 - Que es la memoria de asignación única?
 - Que es una sentencia semántica?
-- Que es un estado de ejecución en la máquia abstracta?
+- Que es un estado de ejecución en la máquina abstracta?
 - Que es una computación en la máquina abstracta?
 - En que estados posibles puede estar la máquina abstracta?
 - Oz que alcance tiene? como se modificaria para logra alcance dinámico?
@@ -219,7 +219,7 @@ Capitulo 3: el modelo declarativo (slides)
 
 Capitulo 3: el modelo declarativo (preguntas anotadas)
 - Un ambiente es una función?
-- Las varables que no tengan un identificador que las referencien que son?
+- Las variables que no tengan un identificador que las referencien que son?
 - Cuando en un proc guardo el ambiente especial, que estoy implementando?
 - Que produce si intento ligar/unificar 2 registros?
 - Que tipo de pasaje de parametro tiene oz?
@@ -263,7 +263,7 @@ Capitulo 4: Lenguajes funcionales (libro)
 - Ventajas y desventajas respecto a la programación imperativa
 - Que es el calculo lambda?
 - Como se define una expresión lambda inductivamente?
-- Como se definen las varaibles libres de una exp lambda recursivamente?
+- Como se definen las variables libres de una exp lambda recursivamente?
 - Que reducciones y conversiones hay?
 - Definición de función computable
 - Es posible crear un algoritmo que tome 2 exp lambda y retorne true o
@@ -289,7 +289,7 @@ Capitulo 4: Lenguajes funcionales (libro)
 - Porque ML se considera un lenguaje funcional con
   características imperativas
 - Explicar un poco de Haskell
-- En ML se puede ahcer sobrecarga de funciones sino coloco los tipos?
+- En ML se puede hacer sobrecarga de funciones sino coloco los tipos?
 - Hablar algo de Ocaml (derivado de ML)
 - Porque Ocaml no es un lenguaje funcional puro?
 - Haskell es un lenguaje basado en expresiones?
@@ -332,12 +332,14 @@ Capitulo 4: Lenguajes funcionales (preguntas anotadas)
 - Porque en funcional da lo mismo evaluar con un orden u otro?
 - Todas las abstracciones lambda estan currificadas?
 - Que hacemos con calulo lambda
--  Proponer cambios en la sintaxis y semántica del lenguaje kernel para
-   convertirlo en un lenguaje funcional puro.
+- Proponer cambios en la sintaxis y semántica del lenguaje kernel para
+  convertirlo en un lenguaje funcional puro.
 - En funcional por ejemplo haskell se pueden meter funciones dentro de
   estructuras? (embebimiento)
 - Como coperan las funciones en funcional?
 - Que es una función total y parcial? haskell permite funciones parciales?
+- Algo de haskell como hace con la evaluación lazy, de un caso en el que
+  incluso con la evaluacion lazy no terminaba nuca o algo asi
 
 Capitulo 4: Lenguajes funcionales (drive)
 - Características de las programación funcional
@@ -367,7 +369,7 @@ Capitulo 5: Programación Relacional (libro)
 - De que formas se puede ver a un programa lógico?
 - Que produce una consulta del probador de teoremas?
 - Explicar como traducir de programa relacional a formula lógica
-- Una semántica lógica se peude corresponder con muchas
+- Una semántica lógica se puede corresponder con muchas
   semánticas operacionales?
 - Explicar la semantica operacional y la lógica
 - En que consiste escribir un programa lógico?
@@ -489,7 +491,7 @@ Capitulo 6: el modelo con estado (statefull) (preguntas anotadas)
 - Hay transparencia referencial en imperativo?
 - Las celdas en Oz en los lenguajes como C/C++, Pascal a que es similar?
 - Porque el pasaje por nombre se usa muy poco en imperativo?
-- Que devuelve la asignación en C? es uan función que asigna y devuelve algo
+- Que devuelve la asignación en C? es una función que asigna y devuelve algo
 - Que cosas permiten minimizar los TAD?
 - Relacionar los tipos de pasaje de parametros con los ordenes de evaluación
 - Dar ejemplos de lenguajes para cada tipo de pasaje de parametro
@@ -566,7 +568,7 @@ Capitulo 8: Manejo de memoria (libro)
 - Cuando no es necesario el static link?
 - El espacio requerido por var locales se determina estáticamente. Pero en
   dónde esta la info de cuanto ocupa cada var local?
-- Como se implementa el alcande estático y el
+- Como se implementa el alcance estático y el
   dinámico en los registros de activación?
 - Cuando uso static link cual es el costo de ir a buscar la variable
   que no es local ni parametro?
@@ -614,7 +616,7 @@ Capitulo 8: Manejo de memoria (preguntas anotadas)
 - Como soluciona haskell el problema de la fragmentación?
 - Que criterio usa el garbage collector para dispararse?
 - Relación entre programa/garbage collector y suspensión
-- Comprara cada técnica de garbage collector
+- Comparar cada técnica de garbage collector
 - Dar ejemplos de lenguajes que no usen gc y de lenguajes que si usen
   gc y ademas dar que técnica usa el gc
 - Que pasa si tengo una función recursiva que no termina nunca?
@@ -685,7 +687,7 @@ Capitulo 9: Programación orientada a objetos (libro)
   dispatching estático también mediante keywords?
 - Como se controla el acceso/visibilidad a los componentes de una clase?
 - Como es la visibilidad en Eiffel?
-- Como se llama la clase raiz dela que hereda implicitamente todas
+- Como se llama la clase raiz de la que hereda implicitamente todas
   las clases en java y Eiffel?
 - En C++ todas las clases heredan implicitamente de otra clase?
 - Que define una clase?
@@ -759,7 +761,7 @@ Capitulo 9: Programación orientada a objetos (preguntas anotadas)
 - Como se hace para usar parametros variables en Java?
 - Dar un ejemplo de cómo se puede implementar un diseño con herencia múltiple
   en Eiffel.
-- En que sistemas es útil ahcer invocaciones a métodos por mensaje?
+- En que sistemas es útil hacer invocaciones a métodos por mensaje?
 - Como implementarias por abajo para pasar en java o C un número variable
   de parametros a una función?
 - El dispatching estático, que no me permite hacer?
@@ -849,7 +851,7 @@ Capitulo 10: Concurrencia (libro)
 - Decir algunas aplicaciones de la ejecución lazy
 - Que es una aplicación de tiempo real blando? y tiempo real fuerte?
 - Como se relaciona la concurrencia con el mecanismo de excepciones?
-- Que es la sincronización de threads? de que maneras peude hacerse?
+- Que es la sincronización de threads? de que maneras puede hacerse?
 - En un programa la sincronización como puede ser?
 - Como es la concurrencia en el modelo con estado compartido?
 - Que problemas existen con la concurrencia en el modelo con estado
@@ -922,7 +924,7 @@ Capitulo 10: Concurrencia (preguntas anotadas)
 - La JVM tiene su propio scheduler?
 - Había un problema de productor-consumidor en Oz y decia que si Oz ahora el tipo
   de pasaje de parametro era por copia si se rompia o no?
-- Que formas de sincronización hay en decalrativo y cuales
+- Que formas de sincronización hay en declarativo y cuales
   hay en imperativo?
 - Que me garantiza un lock?
 - Con cuanto debería inicializarse un semaforo? con que criterio?
@@ -935,6 +937,7 @@ Capitulo 10: Concurrencia (preguntas anotadas)
 - Que es la exclusion mutua?
 - Ventajas y desventajas de concurrencia
 - Dar un ejemplo de la videa real de porductor-consumidor (videos -> youtube/netflix...)
+- Se podría producir una especie de deadlock en concurrencia en declarativo?
 
 Capitulo 10: Concurrencia (drive)
 - Concurrencia.. que es concurrencia?"se usa en todos los paradigmas?"
@@ -946,6 +949,8 @@ Capitulo 10: Concurrencia (drive)
 - cómo solucionarías el problema de las condiciones de carrera? hacelo
   con semáforos.
 - Hablar un poco de concurrencia en declarativo
+
+
 
 
 Preguntas generales y de otros finales:
@@ -985,6 +990,7 @@ Preguntas de un final:
 - Que dispatching usa Java, que dispatching usa c++?
 - Lo compilado va a ser mas rápido pero renuncias a la flexibilidad (dispatching)
 - Siempre programas para interfaces, nunca para implementaciones. Esto del dispatching es un caso mas
+
 
 
 

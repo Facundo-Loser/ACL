@@ -8,9 +8,11 @@
 - Para el sistema operativo un programa concurrente en realidad es un solo proceso?
   nada mas que adentro se divide en threads? cada uno con su propio stack y mismo heap y código
 
-
 En el apunte dice que el modelo concurrencia con memoria compartida es
 equivalente al modelo con pasaje de mensajes:
 
 En el modelo concurrente con pasaje de mensajes existe el problema de las
 race conditions? y el problema del deadlock?
+
+- Ha tomado Eiffel?
+- Existen las race conditions en concurrencia con mensajes?
