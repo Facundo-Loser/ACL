@@ -339,7 +339,7 @@ Capitulo 4: Lenguajes funcionales (preguntas anotadas)
 - Como coperan las funciones en funcional?
 - Que es una función total y parcial? haskell permite funciones parciales?
 - Algo de haskell como hace con la evaluación lazy, de un caso en el que
-  incluso con la evaluacion lazy no terminaba nuca o algo asi
+  incluso con la evaluacion lazy no terminaba nunca o algo asi
 
 Capitulo 4: Lenguajes funcionales (drive)
 - Características de las programación funcional
@@ -438,13 +438,13 @@ Capitulo 6: el modelo con estado (statefull) (libro)
 - Como es la memoria en imperativo y en declarativo?
 - Que son las celdas? que denota una celda?
 - Que es una referencia? (variable)
-- Diferencia entre referecias en C++ y Java
+- Diferencia entre referencias en C++ y Java
 - Que es la referenciación implicita?
 - Que es un puntero? diferencia respecto a una referencia?
 - Como puede verse una referencia? (TAD)
 - Que operaciones básicas hay sobre celdas? (oZ)
 - La asignación retorna algo en C/C++/Oz?
-- A donde van a para los identificadores de celdas en un lenguaje
+- A donde van a parar los identificadores de celdas en un lenguaje
   interpretado y en uno compilado?
 - En la maquina abstracta cuando una variable es alcanzable? (celdas)
 - Que es aliasing? Cual es el problema que tiene?
@@ -477,7 +477,7 @@ Capitulo 6: el modelo con estado (statefull) (slides)
 - Que es un estado?
 - Que es un estado explícito?
 - Características del estado explícito
-- El aliasing peude causar efectos colaterales?
+- El aliasing puede causar efectos colaterales?
 - En el modelo con estado explícito, las abstracciones ayudan a reducir
   el aliasing?
 

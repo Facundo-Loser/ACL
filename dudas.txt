@@ -14,5 +14,5 @@ equivalente al modelo con pasaje de mensajes:
 En el modelo concurrente con pasaje de mensajes existe el problema de las
 race conditions? y el problema del deadlock?
 
-- Ha tomado Eiffel?
+- Ha tomado Eiffel? Es necesario aprenderlo bien?
 - Existen las race conditions en concurrencia con mensajes?
