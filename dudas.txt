@@ -16,3 +16,25 @@ race conditions? y el problema del deadlock?
 
 - Ha tomado Eiffel? Es necesario aprenderlo bien?
 - Existen las race conditions en concurrencia con mensajes?
+
+
+
+
+
+
+
+Deadlock/Livelock con Canales Asincrónicos
+Incluso con canales asincrónicos (canales buffered con capacidad finita,
+es decir, un búfer de tamaño limitado), puede ocurrir una situación
+problemática.
+
+Deadlock por saturación del búfer: Si los procesos se envían mensajes entre
+sí y llenan los búferes de los canales sin que ninguno de ellos se detenga a
+procesar los mensajes entrantes, eventualmente ambos canales se llenarán.
+Cuando A intente enviar otro mensaje a B (con el búfer de B lleno) y B
+intente enviar otro mensaje a A (con el búfer de A lleno), ambos se bloquearán.
+Livelock (interbloqueo vivo): En sistemas más complejos, los procesos
+pueden estar activos pero no progresar. Imagina un conjunto de procesos
+que solo se dedican a recibir y reenviar mensajes en un círculo. Pueden
+estar "vivos" (no bloqueados permanentemente en una espera), pero el
+sistema en su conjunto no avanza hacia su objetivo final.

@@ -160,7 +160,7 @@ Capitulo 3: el modelo declarativo (libro)
 - Dar un ejemplo de un valor construido parcialmente en Oz
 - Dar un ejemplo de una estructura cíclica en Oz
 - Que es aliasing? genera problema en declarativo? y en imperativo?
-- Los procedimeintos son mas generales que las funciones?
+- Los procedimientos son mas generales que las funciones?
 - Que es una sintactic sugar?
 - Que es una expresión?
 - Que permite un modelo de computación?
@@ -241,7 +241,7 @@ Capitulo 3: el modelo declarativo (preguntas anotadas)
 
 Capitulo 3: el modelo declarativo (drive)
 - Que Comprende el Modelo Declarativo? y por que es mas "seguro" programar
-  en p. declarativo ?
+  en p. declarativo?
 - Aliasing en L. Declarativo?? genera problemas?
 - Lenguaje de Especificacion?
 - Programacion de Alto-Orden
@@ -998,7 +998,7 @@ Preguntas random anotadas en cuaderno:
 - Estaría bueno usar concurrencia en declarativo por el hecho de que no hay efectos colaterales
 - Por ejemplo en haskell serviria para problemas del tipo productor/consumidor en
   dónde el productor en algun punto tuviera que armar la lista buscando datos de una base de datos o esperandolos de un servidor
-- Polimorfismo por ehrencia en final se puede usar un ejemplo
+- Polimorfismo por herencia en final se puede usar un ejemplo
 - Las variables en realidad son direcciones de memoria en leng compilados
 - En declarativo el aliasing no genera problemas
 - Porque Java permite hacer herencia múltiple de interfaces? porque no hay drama acá?
@@ -1007,7 +1007,7 @@ Preguntas random anotadas en cuaderno:
 - Ver como funcionan por abajo varios lenguajes
 - La JVM es una máquina virtual
 - OOP con msj
-- Hacer una lsita de lenguajes a estudiar
+- Hacer una lista de lenguajes a estudiar
 - Monadas de haskell
 
 
