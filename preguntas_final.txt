@@ -77,7 +77,7 @@ Capitulo 2: Lenguajes y modelos de programación (libro)
   (se podría dar el ejemplo de los números complejos)
 - Que es es un tipo estructurado de datos? /
   Como se pueden clasificar?
-- Una ventaja de estrucutras estáticas
+- Una ventaja de estructuras estáticas
   y una desventaja de estructuras dinámicas
 - Que quiere decir que una estructura sea estatica o dinamica?
 - Que es el type checking? /
@@ -276,7 +276,7 @@ Capitulo 4: Lenguajes funcionales (libro)
   con orden aplicativo?
 - Como se implementa la evaluación lazy en C/C++?
 - Porque el orden aplicativo no es una estrategia normalizante?
-- Ventajas y desventajs de orden normal
+- Ventajas y desventajas de orden normal
 - Ventajas y desventajas de orden aplicativo
 - Explicar un poco de Lisp (tipado, compilado/interpretado, alcance, etc)
 - Que tipos de datos tiene Lisp?
